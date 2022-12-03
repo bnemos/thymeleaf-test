@@ -4,7 +4,7 @@ document.querySelector("#indexhtml").innerHTML = `
     
 <nav>
     <ul class="nav-links">
-        <a href="#">Сводный перечень КР</a>
+        <a href="svodkr">Сводный перечень КР</a>
         <a href="#">Сводный перечень ООН</a>
         <a href="#">ПЛПД</a>
         <a href="#">ПФТ</a>
@@ -26,4 +26,18 @@ document.querySelector("#indexhtml").innerHTML = `
 </nav>
 
 `;
+
+const a = [].slice
+    .call(document.querySelector("#nav-links").children)
+    .forEach((navItem) => {
+        if (
+            document.location.pathname
+                .split("/")
+                .includes(navItem.children[0].attributes.href.value)
+        ) {
+            navItem.className += " active";
+        } else {
+            navItem.className = "nav-links";
+        }
+    });
 

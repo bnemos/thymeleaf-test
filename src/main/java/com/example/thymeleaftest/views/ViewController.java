@@ -11,16 +11,14 @@ public class ViewController {
         return "login";
     }
 
-    @GetMapping("/layout")
-    public String layout(){
-        return "layout";
-    }
-
-
     @GetMapping("/main")
     public String main(){
         return "main";
     }
 
+    @GetMapping("/svodkr")
+    public String svodkr(){
+        return "svodkr";
+    }
 
 }

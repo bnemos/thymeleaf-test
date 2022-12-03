@@ -128,3 +128,24 @@ nav{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px );
 }
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #fffdfd;
+}
+
+.hover-table:hover{
+    background-color: #ababab;
+    transition: ease-in .2s;
+}
