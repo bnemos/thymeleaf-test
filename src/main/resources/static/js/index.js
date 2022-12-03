@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-
-    <meta charset="UTF-8">
-
+document.querySelector("#indexhtml").innerHTML = `
     <link rel="stylesheet" th:href="@{/css/layout.css}">
     <link rel="stylesheet" href="../static/css/layout.css">
-
-
-</head>
-<body>
+    
 <nav>
     <ul class="nav-links">
         <a href="#">Сводный перечень КР</a>
@@ -33,7 +25,5 @@
     </div>
 </nav>
 
-<script src="../static/js/navbar.js"></script>
+`;
 
-</body>
-</html>
