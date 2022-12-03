@@ -38,7 +38,7 @@ nav{
     text-decoration: none;
     color: #fff;
     border-bottom:2px solid transparent;
-    transition:0.5s ease;
+    transition:0.2s ease;
     transform: translateX(10%);
 }
 .nav-links a:hover{
@@ -60,7 +60,7 @@ nav{
     height: 3px;
     background: #fff;
     margin: 5px;
-    transition:all 0.2s ease;
+    transition:all 0.1s ease;
 }
 @media only screen{
     nav{
@@ -80,7 +80,7 @@ nav{
         margin: 0;
         padding: 0;
         transform: translateX(-100%);
-        transition:All 0.2s ease-in;
+        transition:All 0.1s ease-in;
     }
     .nav-links a{
         opacity: 0;
@@ -103,7 +103,7 @@ nav{
 @media only screen and (max-width: 460px){
     .nav-links{
         width: 100%;
-        transition:All 0.5s ease;
+        transition:All 0.1s ease;
     }
 }
 .nav-active{
